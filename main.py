@@ -12,15 +12,10 @@ Fileserv = FileService(os.getcwd())
 def get_file():
     return Fileserv.getfiles()
 
-<<<<<<< HEAD
 @app.get("/api/v1/all")
 def get_all():
     return Fileserv.GetAll()
 
-@app.get("/api/v1/folder")
-def get_folder():
-    return Fileserv.getfolders()
-=======
 @app.get("/api/v1/folder")
 def get_folder():
     return Fileserv.getfolders()
@@ -36,8 +31,6 @@ def get_folder_meta(folder_id: str):
 @app.get("/api/v1/folder/{folder_id}/content")
 def get_folder_content(folder_id: str):
     return {"message": f"This is a placeholder for folder {folder_id} content retrieval."}
-
-
 
 # -- FILE AND FOLDER CREATION ENDPOINTS --
 @app.post("/api/v1/file")
@@ -67,4 +60,3 @@ def delete_file(file_id: str):
 @app.delete("/api/v1/folder/{folder_id}")
 def delete_folder(folder_id: str):
     return {"message": f"This is a placeholder for deleting folder {folder_id}."}
->>>>>>> origin/main
