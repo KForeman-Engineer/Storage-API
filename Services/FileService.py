@@ -16,9 +16,6 @@ class FileService:
         self.CurrentDir = os.getcwd()
 
 
-    def UpdateCurrentDir(self, new_dir):
-        self.CurrentDir = new_dir
-
     """
     This function returns a dictionary containing all files and folders in the directory specified by self.Dir
     """
