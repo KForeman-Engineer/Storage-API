@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+storageapi/
+.venv/
+venv/
+env/
+
+# Environment and tooling files
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+
+# Build and distribution files
+build/
+dist/
+*.egg-info/
